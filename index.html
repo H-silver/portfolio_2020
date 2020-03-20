@@ -8,6 +8,143 @@
     <link rel="stylesheet" href="css/common.css">
     <!--css 파일 여기다가 로드하세요-->
     <script src="js/common.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $.fn.hitTest = function(x, y){
+    var bounds = this.offset();
+    bounds.right = bounds.left + this.outerWidth();
+    bounds.bottom = bounds.top + this.outerHeight();
+    if(x >= bounds.left){
+        if(x <= bounds.right){
+            if(y >= bounds.top){
+                if(y <= bounds.bottom){
+                    return true;
+                }
+            }
+        }
+    }
+    return false;
+}
+
+$(document).ready(function() {
+   var mouse = {},
+      $block = $('.imgbox .block'),
+      startFlag = false;
+
+   $(document).on('mousemove', function(e) {
+      mouse.x = e.pageX;
+      mouse.y = e.pageY;
+
+      $block.each(function(index, el) {
+         var $this = $(this),	
+            hover = $this.hitTest(mouse.x, mouse.y),
+            $bg = $this.find('.bg'),
+            $offset = $this.offset(),
+            width = $this.width(),
+            height = $this.height(),
+            center = {
+               x : $offset.left + (width / 2),
+               y : $offset.top + (height / 2)
+            }
+            range = {
+               x1 : center.x + width / 6,
+               x2 : center.x - width / 6,
+               y1 : center.y + height / 6,
+               y2 : center.y - height / 6
+            },
+            toStyle = {
+               transition : (startFlag) ? 'all 0.3s' : 'none'
+            };
+
+         if(!hover) {
+            if(mouse.x > range.x1) {
+               // right
+               toStyle.left = '200%';
+            } else if(mouse.x < range.x2) {
+               // left
+               toStyle.left = '0';
+            } else {
+               // center
+               toStyle.left = '100%';
+            }
+
+            if(mouse.y > range.y1) {
+               // bottom
+               toStyle.top = '200%';
+            } else if(mouse.y < range.y2) {
+               // top
+               toStyle.top = '0';
+            } else {
+               // center
+               toStyle.top = '100%';
+            }
+
+            $bg.css(toStyle);
+         }
+      });
+
+      startFlag = true;
+   });
+
+   $block.on('mouseenter', function(e) {
+      var $this = $(this),
+         $bg = $this.find('.bg'),
+         $offset = $this.offset(),
+         width = $this.width(),
+         height = $this.height(),
+         center = {
+            x : $offset.left + (width / 2),
+            y : $offset.top + (height / 2)
+         },
+         range = {
+            x1 : center.x + width / 6,
+            x2 : center.x - width / 6,
+            y1 : center.y + height / 6,
+            y2 : center.y - height / 6
+         },
+         fromStyle = {
+            transition : 'none'
+         },
+         toStyle = {
+            transition : 'all 0.3s'
+         };
+
+      if(mouse.x > range.x1) {
+         // right
+         fromStyle.left = '200%';
+         toStyle.left = '100%';
+      } else if(mouse.x < range.x2) {
+         // left
+         fromStyle.left = '0';
+         toStyle.left = '100%';
+      } else {
+         // center
+         fromStyle.left = '100%';
+         toStyle.left = '100%';
+      }
+
+      if(mouse.y > range.y1) {
+         // bottom
+         fromStyle.top = '200%';
+         toStyle.top = '100%';
+      } else if(mouse.y < range.y2) {
+         // top
+         fromStyle.top = '0';
+         toStyle.top = '100%';
+      } else {
+         // center
+         fromStyle.top = '100%';
+         toStyle.top = '100%';
+      }
+      
+      $bg.css(fromStyle);
+      setTimeout(function() {
+         $bg.css(toStyle);
+      }, 10);
+   });
+});
+
+    </script>
     <!--script 파일 여기다가 로드하세요-->
 </head>
 <body>
@@ -51,7 +188,7 @@
         <!--컨테이너 틀은 가능하면 같은형식으로-->
         <div class="project">
             <h2>PROJECT</h2>
-            <div class="contbox">
+            <div class="contbox imgbox">
                     <div class="year">2020</div>
                     <div class="test">2020</div>
                     <div class="txtbox">
@@ -59,8 +196,8 @@
                         <p>FEATURE...프로젝트 진행 후 특징을 적으세요<br>
                             TOOLS 무엇을 적을까요 사용한 툴을 적으세요</p>
                     </div>
-                    <div class="imgbox">
-                        <img src="./img/project4.png" alt="프로젝트4">
+                    <div class="block">
+                        <div class="bg"></div>
                     </div>
                     <hr>
             </div>
