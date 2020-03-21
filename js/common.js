@@ -75,6 +75,56 @@ $(document).ready(function() {
 
       startFlag = true;
    });
+   
+   // //실행틀 시작
+   //    var menu = $(".icon_scroll");
+   //     var content = $("#container .project");
+    
+   //     menu.click(function(){
+   //        /*preventDefault 는 a 태그 처럼 클릭 이벤트 외에 
+   //  별도의 브라우저 행동을 막기 위해 사용됩니다.*/
+   //        event.preventDefault();
+          
+          
+   //        //.offset()은 선택한 요소의 좌표를 가져오거나 특정 좌표로 이동하게 합니다.
+   //        var tt = content.offset().top;
+    
+   //        //스크롤이 tt의 값에 맞게 움직이게
+   //        $("html,body").stop().animate({scrollTop:tt});
+   //        });//menu.click() 끝
+          
+   //        // 윈도우에서 scroll() 스크롤이 작동될 때 일어날 일.
+   //        $(window).scroll(function(){
+   //        //.scrollTop()은 선택한 요소의 스크롤바 수직 위치를 반환하거나 스크롤바 수직 위치를 정합니다.
+   //        var location = $(window).scrollTop();
+          
+   //        content.each(function() {
+   //           //반복문(each)
+   //        var tg = $(this);
+   //           var idx = tg.index();
+             
+    
+    
+   //      });//each() 끝
+          
+             
+   //           });//scroll() 끝
+   //  //실행틀 끝
+   
+   // 클릭 페이지 이동
+   
+
+			$('.icon_scroll').click(function(){
+
+			var offset = $('.project').offset(); //선택한 태그의 위치를 반환
+
+                //animate()메서드를 이용해서 선택한 태그의 스크롤 위치를 지정해서 0.4초 동안 부드럽게 해당 위치로 이동함 
+
+	        $('html').animate({scrollTop : offset.top}, 400);
+
+		});
+
+
 
    $block.on('mouseenter', function(e) {
       var $this = $(this),
@@ -132,5 +182,8 @@ $(document).ready(function() {
          $bg.css(toStyle);
       }, 10);
    });
+
+  
+
 });
 

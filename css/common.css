@@ -221,14 +221,14 @@ h3 {
 .bg_line div {
    height: 100vh;
    border-right: 1px solid #e2e4e4;
-   position: absolute;
+   position: fixed;
    top: 0;
    left: 0;
    z-index: -1;
 }
    .bg_line .line1 {left: 100px;}
-   .bg_line .line2 {left: 23%;}
-   .bg_line .line3 {left: 71%;}
-   .bg_line .line4 {right: 71%;}
-   .bg_line .line5 {right: 23%;}
+   .bg_line .line2 {left: 444px;}
+   .bg_line .line3 {left: 788px;}
+   .bg_line .line4 {right: 788px;}
+   .bg_line .line5 {right: 444px;}
    .bg_line .line6 {right: 100px;}
