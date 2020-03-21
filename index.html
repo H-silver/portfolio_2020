@@ -7,144 +7,10 @@
     <title>KANG HAEUN</title>
     <link rel="stylesheet" href="css/common.css">
     <!--css 파일 여기다가 로드하세요-->
-    <script src="js/common.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script>
-        $.fn.hitTest = function(x, y){
-    var bounds = this.offset();
-    bounds.right = bounds.left + this.outerWidth();
-    bounds.bottom = bounds.top + this.outerHeight();
-    if(x >= bounds.left){
-        if(x <= bounds.right){
-            if(y >= bounds.top){
-                if(y <= bounds.bottom){
-                    return true;
-                }
-            }
-        }
-    }
-    return false;
-}
-
-$(document).ready(function() {
-   var mouse = {},
-      $block = $('#container .block'),
-      startFlag = false;
-
-   $(document).on('mousemove', function(e) {
-      mouse.x = e.pageX;
-      mouse.y = e.pageY;
-
-      $block.each(function(index, el) {
-         var $this = $(this),	
-            hover = $this.hitTest(mouse.x, mouse.y),
-            $bg = $this.find('.bg'),
-            $offset = $this.offset(),
-            width = $this.width(),
-            height = $this.height(),
-            center = {
-               x : $offset.left + (width / 2),
-               y : $offset.top + (height / 2)
-            }
-            range = {
-               x1 : center.x + width / 6,
-               x2 : center.x - width / 6,
-               y1 : center.y + height / 6,
-               y2 : center.y - height / 6
-            },
-            toStyle = {
-               transition : (startFlag) ? 'all 0.3s' : 'none'
-            };
-
-         if(!hover) {
-            if(mouse.x > range.x1) {
-               // right
-               toStyle.left = '200%';
-            } else if(mouse.x < range.x2) {
-               // left
-               toStyle.left = '0';
-            } else {
-               // center
-               toStyle.left = '100%';
-            }
-
-            if(mouse.y > range.y1) {
-               // bottom
-               toStyle.top = '200%';
-            } else if(mouse.y < range.y2) {
-               // top
-               toStyle.top = '0';
-            } else {
-               // center
-               toStyle.top = '100%';
-            }
-
-            $bg.css(toStyle);
-         }
-      });
-
-      startFlag = true;
-   });
-
-   $block.on('mouseenter', function(e) {
-      var $this = $(this),
-         $bg = $this.find('.bg'),
-         $offset = $this.offset(),
-         width = $this.width(),
-         height = $this.height(),
-         center = {
-            x : $offset.left + (width / 2),
-            y : $offset.top + (height / 2)
-         },
-         range = {
-            x1 : center.x + width / 6,
-            x2 : center.x - width / 6,
-            y1 : center.y + height / 6,
-            y2 : center.y - height / 6
-         },
-         fromStyle = {
-            transition : 'none'
-         },
-         toStyle = {
-            transition : 'all 0.3s'
-         };
-
-      if(mouse.x > range.x1) {
-         // right
-         fromStyle.left = '200%';
-         toStyle.left = '100%';
-      } else if(mouse.x < range.x2) {
-         // left
-         fromStyle.left = '0';
-         toStyle.left = '100%';
-      } else {
-         // center
-         fromStyle.left = '100%';
-         toStyle.left = '100%';
-      }
-
-      if(mouse.y > range.y1) {
-         // bottom
-         fromStyle.top = '200%';
-         toStyle.top = '100%';
-      } else if(mouse.y < range.y2) {
-         // top
-         fromStyle.top = '0';
-         toStyle.top = '100%';
-      } else {
-         // center
-         fromStyle.top = '100%';
-         toStyle.top = '100%';
-      }
-      
-      $bg.css(fromStyle);
-      setTimeout(function() {
-         $bg.css(toStyle);
-      }, 10);
-   });
-});
-
-    </script>
+    <script src="js/common.js"></script>
+    
+    
     <!--script 파일 여기다가 로드하세요-->
 </head>
 <body>
@@ -162,11 +28,9 @@ $(document).ready(function() {
         </div>
         <div id="gnb">
             <ul>
+                <li class="button_x"><a href="#">X</a></li>
                 <li>
                     <a href="#">HOME</a>
-                    <ul>
-                        <li><a href="#">메뉴1-1</a></li>
-                    </ul>
                 </li>
                 <li><a href="#">PROJECT</a></li>
                 <li><a href="#">PROFILE</a></li>
@@ -190,14 +54,14 @@ $(document).ready(function() {
             <h2>PROJECT</h2>
             <div class="contbox">
                     <div class="year">2020</div>
-                    <div class="test">2020</div>
                     <div class="txtbox">
                         <h3>PROJECT 4. NEW PROJECT</h3>
                         <p>FEATURE...프로젝트 진행 후 특징을 적으세요<br>
                             TOOLS 무엇을 적을까요 사용한 툴을 적으세요</p>
                     </div>
                     <div class="block">
-                        <div class="bg"></div>
+                        <div class="bg1"></div>
+                        <img src="./img/project4.png" alt="프로젝트4">
                     </div>
                     <hr>
             </div>
@@ -210,7 +74,8 @@ $(document).ready(function() {
                         카페 24  HTML5  CSS3   JQuery</p>
                 </div>
                 <div class="block">
-                    <div class="bg"></div>
+                    <div class="bg2"></div>
+                    <img src="./img/project3.png" alt="프로젝트3">
                 </div>
                 <hr>
             </div>
@@ -221,7 +86,7 @@ $(document).ready(function() {
                         HTML5</p>
                 </div>
                 <div class="block">
-                    <div class="bg bg1"></div>
+                    <div class="bg3"></div>
                 </div>
                 <hr>
             </div>
@@ -233,7 +98,7 @@ $(document).ready(function() {
                         HTML5  CSS3   JQuery</p>
                 </div>
                 <div class="block">
-                    <div class="bg bg2"></div>
+                    <div class="bg4"></div>
                 </div>
                 <hr>
             </div>
@@ -245,7 +110,7 @@ $(document).ready(function() {
                         HTML5  CSS3   JQuery</p>
                 </div>
                 <div class="block">
-                    <div class="bg"></div>
+                    <div class="bg5"></div>
                 </div>
                 <hr>
             </div>

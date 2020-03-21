@@ -1,3 +1,5 @@
+
+
 $.fn.hitTest = function(x, y){
     var bounds = this.offset();
     bounds.right = bounds.left + this.outerWidth();
@@ -16,7 +18,7 @@ $.fn.hitTest = function(x, y){
 
 $(document).ready(function() {
    var mouse = {},
-      $block = $('.imgbox .block'),
+      $block = $('#container .block'),
       startFlag = false;
 
    $(document).on('mousemove', function(e) {
@@ -26,7 +28,7 @@ $(document).ready(function() {
       $block.each(function(index, el) {
          var $this = $(this),	
             hover = $this.hitTest(mouse.x, mouse.y),
-            $bg = $this.find('.bg'),
+            $bg = $this.find('.bg1, .bg2, .bg3, .bg4, .bg5'),
             $offset = $this.offset(),
             width = $this.width(),
             height = $this.height(),
@@ -76,7 +78,7 @@ $(document).ready(function() {
 
    $block.on('mouseenter', function(e) {
       var $this = $(this),
-         $bg = $this.find('.bg'),
+         $bg = $this.find('.bg1, .bg2, .bg3, .bg4, .bg5'),
          $offset = $this.offset(),
          width = $this.width(),
          height = $this.height(),
@@ -131,3 +133,4 @@ $(document).ready(function() {
       }, 10);
    });
 });
+
