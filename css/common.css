@@ -25,12 +25,12 @@ div, h1, h2, p, ul {
    margin:0;
    padding:0;
 }
-
+/*
 body {
    background: url(../img/bg.png) 100%;
    background-position: center;
 }
-
+*/
 hr {
    clear: both;
    border: none;
@@ -64,6 +64,7 @@ h1 {
    .icon_gnb img {width: 100%;}
 
 #gnb {
+   display: none;
    background: #3b3b3b;
    width: calc( 50% - 150px );
    height: 100vh;
@@ -89,11 +90,12 @@ h1 {
       content: "";
       display: block;
       height: 1px;
+      width: 0;
       left: 0;
       position: absolute;
       background: #f5f5f5;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      width: 0;
+      
    }
 
    #gnb a:hover {
@@ -102,7 +104,6 @@ h1 {
    
    #gnb a:hover:after { 
       width: 100%; 
-      left: 0; 
     }
 
    #gnb li.button_x a {padding-top: 0px;}
@@ -143,6 +144,7 @@ h1 {
    background: #3b3b3b;
    margin: auto;
    margin-top: 50px; 
+   overflow: hidden;
 }
 
 h2 {
@@ -174,12 +176,12 @@ h3 {
       font-weight: 100;
       
    }
-
+   /*
    .test {
       writing-mode: vertical-rl;
       text-orientation: upright;
    }
-
+   */
    .txtbox {
       float: left;
       width: 50%;
@@ -214,3 +216,19 @@ h3 {
    font-size: 36px;
    font-weight: 900;
 }
+
+/********* background line*********************/
+.bg_line div {
+   height: 100vh;
+   border-right: 1px solid #e2e4e4;
+   position: absolute;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+   .bg_line .line1 {left: 100px;}
+   .bg_line .line2 {left: 23%;}
+   .bg_line .line3 {left: 71%;}
+   .bg_line .line4 {right: 71%;}
+   .bg_line .line5 {right: 23%;}
+   .bg_line .line6 {right: 100px;}
