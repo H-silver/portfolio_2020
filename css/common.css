@@ -64,7 +64,7 @@ h1 {
    .icon_gnb img {width: 100%;}
 
 #gnb {
-   display: none;
+   /*display: none;*/
    background: #3b3b3b;
    width: calc( 50% - 150px );
    height: 100vh;
@@ -95,7 +95,7 @@ h1 {
       position: absolute;
       background: #f5f5f5;
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
-      
+      z-index: 12;
    }
 
    #gnb a:hover {
@@ -107,7 +107,7 @@ h1 {
     }
 
    #gnb li.button_x a {padding-top: 0px;}
-   #gnb li.button_x a:after{width: 0;}
+   #gnb li.button_x a:after {width: 0;}
    
 /********* footer *************/
 
