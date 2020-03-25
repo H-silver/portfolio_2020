@@ -86,6 +86,16 @@
        .bg3 { width:100%; height:100%; background:yellow; position:absolute; top:0; left:0; transform:translate3d(-100%,-100%,0); transition:all 0.3s; }
        .bg4 { width:100%; height:100%; background:olive; position:absolute; top:0; left:0; transform:translate3d(-100%,-100%,0); transition:all 0.3s; }
        .bg5 { width:100%; height:100%; background:blue; position:absolute; top:0; left:0; transform:translate3d(-100%,-100%,0); transition:all 0.3s; }
+
+       .block a {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          padding-top: 45%;
+
+       }
+       
     /*
     .imgbox {
        width: 50%;
