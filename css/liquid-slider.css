@@ -27,8 +27,9 @@
   position: relative;
 }
 .liquid-slider {
-  background: #f2f2f2;
+  background: rgba(255, 255, 255, 0);
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   float: left;
   overflow: hidden;
@@ -64,25 +65,30 @@
   float: left;
 }
 .panel-wrapper {  
-  padding: 15px 40px;
+  padding: 15px 444px;
   position:relative;
+}
+
+.panel-wrapper h2 {
+  margin-top: 50px;
 }
 
 /*** Tabbed Navigation ***/
 .ls-nav {
   overflow:hidden;
   clear:both;
+  margin-left: calc( 50% - 267px );/*tab nav 위치*/
 }
 .ls-nav a {
-  background: #d8d8d8;
-  color: #333333;
+  background: #fff;
+  color: #3b3b3b;
   margin-right: 1px;
   padding: 10px 15px;  
   outline:0;
 }
 .ls-nav a:hover {
-  background: #f2f2f2;
-  color: #333333;
+  background: #aadde5;
+  color: #fff;
   text-shadow: none;
 }
 .ls-nav .current a {
@@ -112,7 +118,7 @@
   width: 100%;
   height: 35px;
   overflow: hidden;
-  background: url(../images/menu.png) no-repeat right #ddd;
+  background: url(../images/menu.png) no-repeat right #fff;
 }
 .ls-select-box select {  
   width: 150%;
@@ -135,7 +141,7 @@
   clear:both;
 }
 .ls-nav-left a, .ls-nav-right a {
-  background: #000;
+  background: #3b3b3b;
   color: #fff;
   padding: 5px;
   width: 100px;
@@ -178,20 +184,20 @@
   display: block;
 }
 .ls-wrapper [class$="-arrow"] {
-  width: 25px;
-  height: 25px;
-  background-image: url(../images/arrow.png);
+  width: 44px;
+  height: 100px;
+  background-image: url(../img/arrow.png);
   background-repeat: no-repeat;
-  margin-top: 50px;
+  margin-top: 0px;
   position:relative;
 }
 .ls-nav-right-arrow {
-  background-position: top right;  
-  margin-right: 5px;
+  background-position: top right;
+  margin-right: 110px;
 }
 .ls-nav-left-arrow {
   background-position: top left;  
-  margin-left: 5px;
+  margin-left: 110px;
 }
 .ls-nav-left-arrow:hover {
   background-position: bottom left;
@@ -200,12 +206,13 @@
   background-position: bottom right;
 }
 .ls-responsive .ls-nav-left-arrow {
-  position: absolute;
+  position: fixed;
   left: 0;
   z-index: 2;
 }
 .ls-responsive .ls-nav-right-arrow {
-  position: absolute;
+  position: fixed;
   right: 0;
   z-index: 2;
 }
+
