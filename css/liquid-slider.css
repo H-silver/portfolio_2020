@@ -135,46 +135,6 @@
   outline: 0;
 }
 
-/*** Arrow Navigation (non-graphical) ***/
-.ls-nav-left, .ls-nav-right {
-  top:0;
-  float: left;
-  clear:both;
-}
-.ls-nav-left a, .ls-nav-right a {
-  background: #3b3b3b;
-  color: #fff;
-  padding: 5px;
-  width: 100px;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-}
-.ls-responsive .ls-nav-left {
-  position: absolute;
-  left: 0;
-  z-index: 2;
-}
-.ls-responsive .ls-nav-left a {
-  background: #9A9A9A;
-  width: 80px;
-}
-.ls-responsive .ls-nav-left a:hover {
-  background: #747474;
-}
-.ls-responsive .ls-nav-right {
-  position: absolute;
-  right: 0;
-  z-index: 2;
-}
-.ls-responsive .ls-nav-right a {
-  background: #9A9A9A;
-  width: 80px;
-}
-.ls-responsive .ls-nav-right a:hover {
-  background: #747474;
-}
-
 /*** Arrow Navigation (graphical) ***/
 .ls-nav-left-arrow, .ls-nav-right-arrow {
   cursor: pointer;
@@ -208,11 +168,13 @@
 }
 .ls-responsive .ls-nav-left-arrow {
   position: fixed;
+  top: 50%;
   left: 0;
   z-index: 2;
 }
 .ls-responsive .ls-nav-right-arrow {
   position: fixed;
+  top: 50%;
   right: 0;
   z-index: 2;
 }

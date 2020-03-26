@@ -4,10 +4,11 @@
 #container {
     margin-top: 138px;
 }
-    h2 {
-        font-size: 48px;
-        margin-bottom: 80px;
-        text-align: center;
+    #container h2 {
+            font-size: 48px;
+            margin-bottom: 80px;
+            text-align: center;
+            padding: 0;
     }
 
     #container .profile p {

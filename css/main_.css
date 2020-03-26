@@ -4,7 +4,6 @@
  .mainimg {
     height: 800px;
     width: calc( 100% - 200px);
-    /*padding: 0 100px;*/
     margin: 0 100px;
     
     background: url(../img/PORTFOLIO_1.png) no-repeat;
@@ -75,9 +74,11 @@
     */
     .txtbox {
        float: left;
-       width: 50%;
+       width: calc( 50% - 20px );
        font-weight: 300;
        line-height: 42px;
+       padding: 10px;
+       word-break: keep-all;
     }
  
     .block { float:left; width:50%; height:366px; position:relative; overflow:hidden; }
@@ -95,13 +96,3 @@
           padding-top: 45%;
 
        }
-       
-    /*
-    .imgbox {
-       width: 50%;
-    }
-       .imgbox img {
-          width: 100%;
-       }
-    */
- 
