@@ -65,7 +65,8 @@
   float: left;
 }
 .panel-wrapper {  
-  padding: 15px 444px;
+  padding: 15px 15px;
+  margin: 0 444px;
   position:relative;
 }
 
