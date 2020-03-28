@@ -25,12 +25,12 @@ div, h1, h2, p, ul, input {
    margin:0;
    padding:0;
 }
-/*
-body {
-   background: url(../img/bg.png) 100%;
+
+/* .wrap {
+   background-image: url(../img/bg_line_1.png);
    background-position: center;
-}
-*/
+} */
+
 hr {
    clear: both;
    border: none;
