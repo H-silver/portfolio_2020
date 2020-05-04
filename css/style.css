@@ -13,7 +13,7 @@
     #header .inner h1 {
       position: absolute;
       top: 0;
-      left: 73px;
+      left: 80px;
       display: block;
       width: 138px;
       height: 100%; }
@@ -383,6 +383,12 @@ template {
   font-family: 'Montserrat', sans-serif, 'Noto Sans KR';
   font-weight: 200;
   color: #3b3b3b; }
+
+h2 {
+  font-size: 60px;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 150px; }
 
 .bg-line div {
   height: 100vh;
