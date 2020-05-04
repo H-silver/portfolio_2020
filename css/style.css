@@ -1,23 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 #header {
   position: fixed;
-  top: 0;
+  top: 100px;
   left: 0;
   width: 100%;
-  height: 100px; }
+  height: 100px;
+  z-index: 10; }
   #header .inner {
+    position: relative;
     padding: 0 100px;
     height: 100%; }
     #header .inner h1 {
+      position: absolute;
+      top: 0;
+      left: 73px;
       display: block;
       width: 138px;
       height: 100%; }
       #header .inner h1 a {
-        display: block;
+        display: inline-block;
         width: 100%;
         height: 100%; }
         #header .inner h1 a img {
           height: 100%; }
+    #header .inner #btn-open {
+      position: absolute;
+      top: 0;
+      right: 100px;
+      width: 100px;
+      height: 100%; }
+      #header .inner #btn-open a {
+        display: inline-block;
+        width: 100%;
+        height: 100%; }
+        #header .inner #btn-open a img {
+          width: 100%; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -88,6 +105,9 @@ pre {
 a {
   background-color: transparent;
   text-decoration: none; }
+
+p {
+  margin: 0; }
 
 /**
  * 1. Remove the bottom border in Chrome 57-
@@ -363,5 +383,24 @@ template {
   font-family: 'Montserrat', sans-serif, 'Noto Sans KR';
   font-weight: 200;
   color: #3b3b3b; }
+
+.bg-line div {
+  height: 100vh;
+  border-right: 1px solid #e2e4e4;
+  position: fixed;
+  top: 0;
+  z-index: -1; }
+.bg-line .bg-line1 {
+  left: 100px; }
+.bg-line .bg-line2 {
+  left: 444px; }
+.bg-line .bg-line3 {
+  left: 788px; }
+.bg-line .bg-line4 {
+  right: 788px; }
+.bg-line .bg-line5 {
+  right: 444px; }
+.bg-line .bg-line6 {
+  right: 100px; }
 
 /*# sourceMappingURL=style.css.map */
