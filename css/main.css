@@ -1,7 +1,8 @@
 .mainimg {
   padding: 0 100px; }
   .mainimg img {
-    width: 100%; }
+    width: 100%;
+    overflow: hidden; }
 
 #icon_scroll {
   text-align: center;
@@ -14,18 +15,19 @@
       width: 100%; }
 
 .contbox {
-  padding: 0 273px;
+  padding: 0 200px;
   margin-bottom: 175px;
   font-size: 24px; }
   .contbox .txtbox {
     float: left;
-    width: 50%;
+    width: 49%;
     font-weight: 300;
     line-height: 42px;
+    padding: 0.5%;
     word-break: keep-all; }
   .contbox .block {
     float: left;
-    width: 50%;
+    width: 49%;
     height: 366px;
     position: relative;
     overflow: hidden; }
