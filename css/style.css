@@ -51,22 +51,25 @@
         display: inline-block;
         padding-top: 55px;
         padding-bottom: 10px;
-        position: relative; }
-        #header .inner nav #menu ul li a::after {
-          bottom: 0;
-          content: "";
-          display: block;
-          height: 1px;
-          width: 0;
-          left: 0;
-          position: absolute;
-          background: #f5f5f5;
-          transition: width 0.3s ease 0s, left 0.3s ease 0s;
-          z-index: 12; }
+        position: relative;
+        width: 100%; }
         #header .inner nav #menu ul li a:hover {
           color: #f5f5f5; }
-          #header .inner nav #menu ul li a:hover::after {
+          #header .inner nav #menu ul li a:hover div::after {
             width: 100%; }
+        #header .inner nav #menu ul li a div {
+          display: inline-block; }
+          #header .inner nav #menu ul li a div::after {
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1px;
+            width: 0;
+            left: 0;
+            position: absolute;
+            background: #dddddd;
+            transition: width 0.3s ease 0s, left 0.3s ease 0s;
+            z-index: 12; }
 
 #footer {
   border-top: 1px solid #ddd;
