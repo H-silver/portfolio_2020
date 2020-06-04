@@ -58,8 +58,13 @@
                         position: absolute;
                         top: 100px;
                         right: 100px;
-                        img{
+                        a{
+                            display: inline-block;
                             width: 100%;
+                            height: 100px;
+                            img{
+                                width: 100%;
+                            }
                         }
                     }
                     ul{

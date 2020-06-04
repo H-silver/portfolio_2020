@@ -47,8 +47,12 @@
         position: absolute;
         top: 100px;
         right: 100px; }
-        #header .inner nav #menu #btn-close img {
-          width: 100%; }
+        #header .inner nav #menu #btn-close a {
+          display: inline-block;
+          width: 100%;
+          height: 100px; }
+          #header .inner nav #menu #btn-close a img {
+            width: 100%; }
       #header .inner nav #menu ul li a {
         color: #808080;
         text-decoration: none;
