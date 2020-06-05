@@ -130,6 +130,9 @@ h1 {
   font-size: 2em;
   margin: 0; }
 
+h2, h3, h4, h5 {
+  margin: 0; }
+
 /* Grouping content
    ========================================================================== */
 /**
@@ -452,7 +455,8 @@ h2 {
   font-size: 60px;
   font-weight: 200;
   text-align: center;
-  padding-top: 150px; }
+  padding-top: 150px;
+  padding-bottom: 100px; }
 
 h3 {
   font-size: 24px;

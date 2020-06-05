@@ -17,7 +17,10 @@
 .contbox {
   padding: 0 200px;
   margin-bottom: 175px;
-  font-size: 24px; }
+  font-size: 24px;
+  position: relative; }
+  .contbox .year {
+    position: absolute; }
   .contbox .txtbox {
     float: left;
     width: 49%;
