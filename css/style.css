@@ -53,34 +53,39 @@
           height: 100px; }
           #header .inner nav #menu #btn-close a img {
             width: 100%; }
-      #header .inner nav #menu ul li a {
-        color: #808080;
-        text-decoration: none;
-        font-size: 36px;
-        letter-spacing: 0.45em;
-        display: inline-block;
-        padding-top: 55px;
-        padding-bottom: 10px;
-        width: 100%; }
-        #header .inner nav #menu ul li a:hover {
-          color: #f5f5f5; }
-          #header .inner nav #menu ul li a:hover div::after {
+      #header .inner nav #menu ul {
+        height: 100%; }
+        #header .inner nav #menu ul li {
+          height: 12%; }
+          #header .inner nav #menu ul li a {
+            color: #808080;
+            text-decoration: none;
+            font-size: 36px;
+            letter-spacing: 0.45em;
+            display: inline-block;
+            padding-top: 50px;
+            padding-left: 100px;
+            height: 100%;
             width: 100%; }
-        #header .inner nav #menu ul li a div {
-          display: inline-block;
-          position: relative; }
-          #header .inner nav #menu ul li a div::after {
-            bottom: 0;
-            content: "";
-            display: block;
-            height: 1px;
-            width: 0;
-            bottom: -3px;
-            left: 1px;
-            position: absolute;
-            background: #dddddd;
-            transition: width 0.3s ease 0s, left 0.3s ease 0s;
-            z-index: 12; }
+            #header .inner nav #menu ul li a:hover {
+              color: #f5f5f5; }
+              #header .inner nav #menu ul li a:hover div::after {
+                width: 100%; }
+            #header .inner nav #menu ul li a div {
+              display: inline-block;
+              position: relative; }
+              #header .inner nav #menu ul li a div::after {
+                bottom: 0;
+                content: "";
+                display: block;
+                height: 1px;
+                width: 0;
+                bottom: -3px;
+                left: 1px;
+                position: absolute;
+                background: #dddddd;
+                transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                z-index: 12; }
 
 #footer {
   border-top: 1px solid #ddd;
