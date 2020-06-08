@@ -1,0 +1,56 @@
+.wrap {
+   #container {
+      text-align: center;
+      padding: 0 175px 150px 175px;
+      //sub_profile
+      .skill{
+         width: 100%;
+         .inner{
+            display: inline-block;
+            width: 10%;
+            .k_icon {
+               box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+               // border-radius: 60px;
+               height: 60px;
+               line-height: 60px;
+               width: 60px;
+               margin-bottom: 20px;
+            }
+            h4{
+               font-weight: 200;
+            }
+         }
+      }
+      //sub_visual
+      .tab{
+         ul{
+            li{
+               width: 20%;
+               height: 100px;
+               float: left;
+               background-color: white;
+               box-shadow: 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
+               &:hover{
+                  box-shadow: 5px 5px rgba(0, 0, 0, 0.2),  -1px -1px rgba(0, 0, 0, 0.05);
+                  background-color: rgba(0, 0, 0, 0.5);
+                  a{
+                     color: white;
+                  }
+               }
+               a{
+                  display: inline-block;
+                  width: 100%;
+                  height: 100%;
+                  line-height: 100px;
+                  color: #3b3b3b;
+               }
+            }
+            &::after{
+               content: "";
+               display: table;
+               clear: both;
+            }
+         }
+      }
+   }
+}

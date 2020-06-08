@@ -21,7 +21,7 @@
   position: relative; }
   .contbox .year {
     position: absolute;
-    top: -50px;
+    top: 14px;
     left: 100px; }
   .contbox .txtbox {
     float: left;

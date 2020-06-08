@@ -470,7 +470,7 @@ h3 {
 
 .bg-line div {
   height: 100vh;
-  border-right: 1px solid #e2e4e4;
+  border-right: 1px solid #f4f4f4;
   position: fixed;
   top: 0;
   z-index: -1; }
