@@ -19,12 +19,12 @@
     height: 100px;
     float: left;
     background-color: white;
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05); }
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05); }
     .wrap #container .tab ul li:hover {
-      box-shadow: 5px 5px rgba(0, 0, 0, 0.2), -1px -1px rgba(0, 0, 0, 0.05);
-      background-color: rgba(0, 0, 0, 0.5); }
+      box-shadow: 5px 5px 5px #e9e8ff, -1px -1px rgba(0, 0, 0, 0.05);
+      background-color: rgba(0, 0, 0, 0); }
       .wrap #container .tab ul li:hover a {
-        color: white; }
+        color: #3b3b3b; }
     .wrap #container .tab ul li a {
       display: inline-block;
       width: 100%;

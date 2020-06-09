@@ -29,12 +29,15 @@
                height: 100px;
                float: left;
                background-color: white;
-               box-shadow: 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
+               box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
                &:hover{
-                  box-shadow: 5px 5px rgba(0, 0, 0, 0.2),  -1px -1px rgba(0, 0, 0, 0.05);
-                  background-color: rgba(0, 0, 0, 0.5);
+                  box-shadow: 5px 5px 5px #e9e8ff,  -1px -1px rgba(0, 0, 0, 0.05);
+                  // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),  -1px -1px rgba(0, 0, 0, 0.05);
+                  background-color: rgba(0, 0, 0, 0);
                   a{
-                     color: white;
+                     // color: white;
+                     // color: #e9e8ff;
+                     color: #3b3b3b
                   }
                }
                a{
