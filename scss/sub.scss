@@ -1,4 +1,4 @@
-.wrap {background-color: olive;
+.wrap {
    #container {
       text-align: center;
       padding: 0 175px 150px 175px;
@@ -111,6 +111,14 @@
       //       }
       //    }
       // }
+
+      //banner
+      .inner{
+         height: 200px;
+         img{
+            height: 100%;
+         }
+      }
    }
 }
 
