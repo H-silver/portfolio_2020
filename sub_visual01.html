@@ -71,7 +71,6 @@
                 <div>
                     <h2 class="title">CARDNEWS</h2>
                     <p>2019.05-06.</p>
-
                             <section class="center slider">
                                 <div>
                                 <img src="./img/cardnews2(1).jpg">
@@ -89,38 +88,85 @@
                                 <img src="./img/cardnews2(5).jpg">
                                 </div>
                             </section>
+                            <section class="center2 slider">
+                                <div>
+                                <img src="./img/cardnews4(1).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews4(2).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews4(3).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews4(4).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews4(5).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews4(6).jpg">
+                                </div>
+                            </section>
                     
-                            <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+                            <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
                             <script type="text/javascript">
                                 $(document).on('ready', function() {
                                 
-                                $('.center').slick({
-                                    dots: true,
-                                    infinite: true,    
-                                    centerMode: true,
-                                    centerPadding: '60px',
-                                    slidesToShow: 3,
-                                    responsive: [
-                                    {
-                                        breakpoint: 768,
-                                        settings: {
-                                        arrows: false,
+                                    $('.center').slick({
+                                        dots: true,
+                                        infinite: true,    
                                         centerMode: true,
-                                        centerPadding: '40px',
-                                        slidesToShow: 3
+                                        centerPadding: '60px',
+                                        slidesToShow: 1,
+                                        responsive: [
+                                        {
+                                            breakpoint: 768,
+                                            settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 3
+                                            }
+                                        },
+                                        {
+                                            breakpoint: 480,
+                                            settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 1
+                                            }
                                         }
-                                    },
-                                    {
-                                        breakpoint: 480,
-                                        settings: {
-                                        arrows: false,
+                                        ]
+                                    });
+                                    $('.center2').slick({
+                                        dots: true,
+                                        infinite: true,    
                                         centerMode: true,
-                                        centerPadding: '40px',
-                                        slidesToShow: 1
+                                        centerPadding: '60px',
+                                        slidesToShow: 1,
+                                        responsive: [
+                                        {
+                                            breakpoint: 768,
+                                            settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 3
+                                            }
+                                        },
+                                        {
+                                            breakpoint: 480,
+                                            settings: {
+                                            arrows: false,
+                                            centerMode: true,
+                                            centerPadding: '40px',
+                                            slidesToShow: 1
+                                            }
                                         }
-                                    }
-                                    ]
-                                });
+                                        ]
+                                    });
                                 });
                             </script>
                 </div>

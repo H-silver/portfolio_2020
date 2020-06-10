@@ -1,3 +1,4 @@
+/* 기본 설정? */
     .slider {
         width: 50%;
         margin: 100px auto;
@@ -5,6 +6,8 @@
 
     .slick-slide {
       margin: 0px 20px;
+      transition: all ease-in-out .3s;
+      opacity: .2;
     }
 
     .slick-slide img {
@@ -16,12 +19,6 @@
       color: black;
     } */
 
-
-    .slick-slide {
-      transition: all ease-in-out .3s;
-      opacity: .2;
-    }
-    
     .slick-active {
       opacity: .5;
     }

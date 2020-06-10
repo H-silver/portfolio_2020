@@ -210,11 +210,12 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    background-color: #d8d8d8;
+    content: '';
     text-align: center;
 
     opacity: .25;
-    color: black;
+    /* color: black; */
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
