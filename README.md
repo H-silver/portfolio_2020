@@ -64,7 +64,8 @@
 - scss mixin.include 이용해보기.
 - 연도 이미지로?.
 - sub_profile. 레이아웃.
-- sub_visual. 레이아웃. 탭. 슬라이드
+- sub_visual. 레이아웃. 탭. 슬라이드 > 슬라이드 하단바.스타일 수정.
+- sub_visual. 나머지 페이지.제이쿼리.
 
 
 

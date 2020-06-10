@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sub.css">
     
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="js/common.js"></script>
@@ -19,7 +22,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
     <script src="./js/jquery.liquid-slider.min.js"></script> 
     -->
-
 </head>
 <body>
     <div class="wrap">
@@ -54,7 +56,6 @@
             </div>
         </div>
         <div id="container">
-            <!--컨테이너 틀은 가능하면 같은형식으로-->
             <div class="visual no-js">
                 <h2>VISUAL</h2>
                 <div class="tab">
@@ -71,50 +72,57 @@
                     <h2 class="title">CARDNEWS</h2>
                     <p>2019.05-06.</p>
 
-                    <!-- Swiper -->
-                        <div class="slider">
-                            <ul>
-                            <li class="item1">
-                                <img src="./img/cardnews2(1).jpg" alt="카드뉴스1">
-                            </li>
-                            <li class="item2">
-                                <img src="./img/cardnews2(2).jpg" alt="카드뉴스2">
-                            </li>
-                            <li class="item3">
-                                <img src="./img/cardnews2(3).jpg" alt="카드뉴스3">
-                            </li>
-                            <li class="item4">
-                                <img src="./img/cardnews2(4).jpg" alt="카드뉴스4">
-                            </li>
-                            <li class="item5">
-                                <img src="./img/cardnews2(5).jpg" alt="카드뉴스5">
-                            </li>
-                            </ul>
-                            <button type="button" class="prev">이전</button>
-                            <button type="button" class="next">다음</button>
-                        </div>
-                        <div class="slider2">
-                            <ul>
-                            <li class="item1">
-                                <img src="./img/cardnews2(5).jpg" alt="카드뉴스1">
-                            </li>
-                            <li class="item2">
-                                <img src="./img/cardnews2(5).jpg" alt="카드뉴스2">
-                            </li>
-                            <li class="item3">
-                                <img src="./img/cardnews2(3).jpg" alt="카드뉴스3">
-                            </li>
-                            <li class="item4">
-                                <img src="./img/cardnews2(4).jpg" alt="카드뉴스4">
-                            </li>
-                            <li class="item5">
-                                <img src="./img/cardnews2(5).jpg" alt="카드뉴스5">
-                            </li>
-                            </ul>
-                            <button type="button" class="prev">이전</button>
-                            <button type="button" class="next">다음</button>
-                        </div>
-                        <script src="js/slide.js"></script>
+                            <section class="center slider">
+                                <div>
+                                <img src="./img/cardnews2(1).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews2(2).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews2(3).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews2(4).jpg">
+                                </div>
+                                <div>
+                                <img src="./img/cardnews2(5).jpg">
+                                </div>
+                            </section>
+                    
+                            <script src="./slick/slick.min.js" type="text/javascript" charset="utf-8"></script>
+                            <script type="text/javascript">
+                                $(document).on('ready', function() {
+                                
+                                $('.center').slick({
+                                    dots: true,
+                                    infinite: true,    
+                                    centerMode: true,
+                                    centerPadding: '60px',
+                                    slidesToShow: 3,
+                                    responsive: [
+                                    {
+                                        breakpoint: 768,
+                                        settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 3
+                                        }
+                                    },
+                                    {
+                                        breakpoint: 480,
+                                        settings: {
+                                        arrows: false,
+                                        centerMode: true,
+                                        centerPadding: '40px',
+                                        slidesToShow: 1
+                                        }
+                                    }
+                                    ]
+                                });
+                                });
+                            </script>
                 </div>
             </div>
         </div>
@@ -127,10 +135,6 @@
                 <li>GIT https://github.com/H-silver</li>
             </ul>
         </div>
-        <!-- 탭 -->
-        <script>
-            $('#main-slider').liquidSlider();
-        </script>
     </div>
     <div class="bg-line">
         <div class="bg-line1"></div>
