@@ -74,8 +74,20 @@
                height: 600px;
             }
          }
-         //04 BI
-         
+         //03 BI
+         .bi{
+            img{
+               width: 100%;
+            }
+         }
+         //04 UI
+         .ui{
+            max-width: 940px;
+            margin: 0 auto;
+            img{
+               width: 100%;
+            }
+         }
          //05 kiosk
          .kiosk{
             // background: #F7F5E6;

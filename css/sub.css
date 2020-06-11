@@ -44,6 +44,13 @@
       height: 100%; }
     .wrap #container .contents .inner.vertical {
       height: 600px; }
+  .wrap #container .contents .bi img {
+    width: 100%; }
+  .wrap #container .contents .ui {
+    max-width: 940px;
+    margin: 0 auto; }
+    .wrap #container .contents .ui img {
+      width: 100%; }
   .wrap #container .contents .kiosk {
     height: 100%;
     margin: 0;

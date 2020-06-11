@@ -5,6 +5,6 @@
       }
     function closeNav() {
     document.getElementById("menu").style.width = "0";
-    document.getElementById("menu").style.paddingTop = "0";
+    document.getElementById("menu").style.paddingTop = "5%";
     document.getElementById("btn-close").style.width = "0";
     }
