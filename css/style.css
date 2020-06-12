@@ -488,14 +488,22 @@ h3 {
 .bg-line .bg-line1 {
   left: 100px; }
 .bg-line .bg-line2 {
-  left: 444px; }
+  left: 23.5%; }
 .bg-line .bg-line3 {
-  left: 788px; }
+  left: 40%; }
 .bg-line .bg-line4 {
-  right: 788px; }
+  right: 40%; }
 .bg-line .bg-line5 {
-  right: 444px; }
+  right: 23.5%; }
 .bg-line .bg-line6 {
   right: 100px; }
+
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: opacity 0.8s, transform 0.8s; }
+  .reveal_visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
 
 /*# sourceMappingURL=style.css.map */

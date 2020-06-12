@@ -50,6 +50,10 @@ ul{
     
 }
 
+$bg1:100px;
+$bg2:23.5%;//444px;
+$bg3:40%;//788px;
+
 .bg-line{
     div{
         height: 100vh;
@@ -59,21 +63,38 @@ ul{
         z-index: -1;
     }
     .bg-line1{
-        left: 100px;
+        left: $bg1;
     }
     .bg-line2{
-        left: 444px;
+        left: $bg2;
     }
     .bg-line3{
-        left: 788px;
+        left: $bg3;
     }
     .bg-line4{
-        right: 788px;
+        right: $bg3;
     }
     .bg-line5{
-        right: 444px;
+        right: $bg2;
     }
     .bg-line6{
-        right: 100px;
+        right: $bg1;
     }
 }
+
+//scroll reveal
+.reveal {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: opacity 0.8s, transform 0.8s;
+  
+  &_visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+
+
+

@@ -1,12 +1,30 @@
 .mainimg {
   padding: 0 100px; }
-  .mainimg img {
+  .mainimg .inner {
     width: 100%;
+    height: 80vh;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-image: url(../img/mainimg.jpg);
     overflow: hidden; }
+    .mainimg .inner p {
+      text-align: right;
+      color: #f5f5f5;
+      font-size: 100px;
+      text-shadow: -3px 3px 2px rgba(132, 26, 36, 0.9);
+      line-height: 0.95em;
+      padding: 11% 3% 0 0;
+      font-weight: 100; }
+      .mainimg .inner p:first-of-type {
+        color: rgba(0, 0, 0, 0);
+        text-shadow: none; }
+    .mainimg .inner img {
+      width: 100%;
+      overflow: hidden; }
 
 #icon_scroll {
   text-align: center;
-  padding-top: 100px; }
+  padding-top: 50px; }
   #icon_scroll a {
     display: inline-block;
     width: 50px;
@@ -33,8 +51,14 @@
   .contbox .block {
     float: left;
     width: 49%;
-    height: 366px;
+    height: auto;
     position: relative;
     overflow: hidden; }
+    .contbox .block a {
+      border: 1px solid #f4f4f4;
+      display: inline-block;
+      width: 100%; }
+      .contbox .block a img {
+        width: 100%; }
 
 /*# sourceMappingURL=main.css.map */
