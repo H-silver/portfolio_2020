@@ -101,6 +101,12 @@
   #footer .copyright li:first-child {
     font-size: 36px;
     font-weight: 900; }
+  #footer .sns ul li {
+    display: inline-block; }
+    #footer .sns ul li a i:before {
+      color: #3b3b3b; }
+    #footer .sns ul li .invisible {
+      color: rgba(0, 0, 0, 0); }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
