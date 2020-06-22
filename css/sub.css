@@ -1,6 +1,12 @@
 .wrap #container {
   text-align: center;
   padding: 0 175px 150px 175px; }
+  .wrap #container .profile {
+    padding: 0 275px; }
+    .wrap #container .profile p {
+      line-height: 2em;
+      text-align: left;
+      padding-bottom: 2em; }
   .wrap #container .skill {
     width: 100%; }
     .wrap #container .skill .inner {

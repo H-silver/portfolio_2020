@@ -471,7 +471,8 @@ template {
   font-family: 'Montserrat', sans-serif, 'Noto Sans KR';
   font-weight: 200;
   color: #3b3b3b;
-  overflow: hidden; }
+  overflow: hidden;
+  word-break: keep-all; }
 
 h2 {
   font-size: 60px;
