@@ -1,4 +1,6 @@
 @charset "utf-8";
+//
+@import 'respond';
 
 //font
 @import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
@@ -94,8 +96,59 @@ $bg3:40%;//788px;
     transform: translate3d(0, 0, 0);
   }
 }
+@media (max-width:1440px) {
+    .bg-line{
+        .bg-line2{
+            left: 30%;
+        }
+        .bg-line3{
+            left: 50%;
+        }
+        .bg-line4{
+            display: none;
+        }
+        .bg-line5{
+            right: 30%;
+        }
+    }
+}
 
+@include tablet{
+    h2{
+        padding-top: 100px;
+    }
+}
 
-
-
-
+@include mobile{
+    .wrap{
+        padding-top: 0;
+        font-size: 22px;
+        #header{
+            height: 64px;
+        }
+        h2{
+            padding: 50px 0;
+            font-size: 36px;
+        }
+        h3{
+            padding-bottom: 15px;
+        }
+    }
+    .bg-line{
+        .bg-line1{
+            left: 50px;
+        }
+        .bg-line2{
+            left: 50%;
+        }
+        .bg-line3{
+            display: none;
+        }
+        .bg-line5{
+            display: none;
+        }
+        .bg-line6{
+            right: 50px;
+        }
+    }
+}

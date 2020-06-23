@@ -153,3 +153,10 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* responsive */
+@media screen and (max-width:780px) {
+    .slider {
+        width: 100%;
+    }
+}

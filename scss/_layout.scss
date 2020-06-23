@@ -1,5 +1,8 @@
+@import 'respond';
+
 .wrap{
     position: relative;
+    min-width: 320px;
     #header {
         position: absolute;
         top: 0;
@@ -28,13 +31,12 @@
                     }
                 }
             }
-    
             #btn-open{
                 position: fixed;
                 top: 100px;
                 right: 100px;
                 width: 100px;
-                height: 100%;
+                height: 100px;
                 a{
                     display: inline-block;
                     width: 100%;
@@ -45,9 +47,6 @@
                 }
             }
             nav{
-                .sidenav{
-                    // padding:5% 0 0 5%;
-                }
                 #menu{
                         position: fixed;
                         top: 0;
@@ -115,9 +114,7 @@
                                 
                             }
                         }
-                    
                 }
-                
             }
         }
     }
@@ -150,6 +147,91 @@
                 }
                 .invisible{
                 color: rgba($color: #000000, $alpha: 0.0);
+                position: absolute;
+                top: 0;
+                left: -100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1440px) {
+    .wrap{
+        #header{
+            .inner{
+                nav{
+                    #menu{
+                        #btn-close{
+                            top: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include mobile{
+    .wrap{
+        #header{
+            .inner{
+                padding: 0;
+                h1{
+                    top: 0;
+                    left: -10px;
+                    height: 64px;
+                    width: 80px;
+                    a{
+                        img{
+                        }
+                    }
+                }
+                #btn-open{
+                    top: 0;
+                    right: 0;
+                    width: 64px;
+                    height: 64px;
+                    a{
+
+                    }
+                }
+                nav{
+                    #menu{
+                        ul{
+                            li{
+                                a{
+                                    font-size: 1.5rem;
+                                    padding-top: #{$pad-m};
+                                    padding-left: #{$pad-m};
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #footer{
+        padding: #{$pad-m};
+        font-size: 1em;
+        line-height: 1.8em;
+        .copyright{
+            ul{
+                li:first-child{
+                    line-height: 42px;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+        .sns{
+            ul{
+                li{
+                    padding: 5px 5px 0 0;
+                    a{
+                        font-size: 1.6em;
+                    }
                 }
             }
         }

@@ -1,9 +1,18 @@
     
 // nav
 function openNav() {
-    document.getElementById("menu").style.width = "50%";
-    document.getElementById("menu").style.paddingTop = "5%";
-    document.getElementById("btn-close").style.width = "100px";
+  var mql = window.matchMedia("screen and (max-width: 768px)");
+
+  if (mql.matches) {
+      document.getElementById("menu").style.width = "80%";
+      document.getElementById("menu").style.paddingTop = "10%";
+      document.getElementById("btn-close").style.width = "64px";
+  } else {
+      document.getElementById("menu").style.width = "50%";
+      document.getElementById("menu").style.paddingTop = "5%";
+      document.getElementById("btn-close").style.width = "100px";
+  }
+    
   }
 function closeNav() {
 document.getElementById("menu").style.width = "0";

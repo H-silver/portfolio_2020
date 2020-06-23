@@ -183,7 +183,7 @@
             _.init(true);
 
         }
-
+        
         return Slick;
 
     }());
@@ -2122,8 +2122,9 @@
          *  - for updating multiple values at once (not responsive)
          *     .slick("setOption", { 'option': value, ... }, refresh )
          */
-
+        
         var _ = this, l, item, option, value, refresh = false, type;
+
 
         if( $.type( arguments[0] ) === 'object' ) {
 

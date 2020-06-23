@@ -1,3 +1,5 @@
+@import 'respond';
+
 .mainimg {
   // position: relative;
   // p{
@@ -41,79 +43,182 @@
     }
   }
 }
-
-#icon_scroll {
-  text-align: center;
-  padding-top: 1%;
-  a {
-    display: inline-block;
-    width: 30px;
-    height: 55px;
-    box-sizing: border-box;
-    .mouse {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      border: 1px solid #ddd;
-      border-radius: 20px;
+#container{
+  #icon_scroll {
+    text-align: center;
+    padding-top: 1%;
+    a {
+      display: inline-block;
+      width: 30px;
+      height: 55px;
       box-sizing: border-box;
-      &::after {
-        @keyframes scroll {
-          0% {
-            transform: translateY(0);
-            opacity: 1;
+      .mouse {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ddd;
+        border-radius: 20px;
+        box-sizing: border-box;
+        &::after {
+          @keyframes scroll {
+            0% {
+              transform: translateY(0);
+              opacity: 1;
+            }
+            100% {
+              transform: translateY(13px);
+              opacity: 0;
+            }
           }
-          100% {
-            transform: translateY(13px);
-            opacity: 0;
-          }
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 13px;
+          width: 2px;
+          height: 10px;
+          background-color: #c9c8cc;
+          animation-name: scroll;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
         }
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: 13px;
-        width: 2px;
-        height: 10px;
-        background-color: #c9c8cc;
-        animation-name: scroll;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
+      }
+    }
+  }
+  .contbox {
+    padding: 0 300px;
+    margin-bottom: 175px;
+    font-size: 24px;
+    position: relative;
+    .year {
+      position: absolute;
+      top: 14px;
+      left: 100px;
+    }
+    .txtbox {
+      float: left;
+      width: 49%;
+      font-weight: 300;
+      line-height: 42px;
+      padding: 0.5%;
+      word-break: keep-all;
+      box-sizing: border-box;
+    }
+    .block {
+      float: left;
+      width: 49%;
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      a {
+        border: 1px solid #f4f4f4;
+        display: inline-block;
+        width: 100%;
+        img {
+          width: 100%;
+        }
       }
     }
   }
 }
 
-.contbox {
-  padding: 0 300px;
-  margin-bottom: 175px;
-  font-size: 24px;
-  position: relative;
-  .year {
-    position: absolute;
-    top: 14px;
-    left: 100px;
-  }
-  .txtbox {
-    float: left;
-    width: 49%;
-    font-weight: 300;
-    line-height: 42px;
-    padding: 0.5%;
-    word-break: keep-all;
-  }
-  .block {
-    float: left;
-    width: 49%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-    a {
-      border: 1px solid #f4f4f4;
-      display: inline-block;
-      width: 100%;
-      img {
-        width: 100%;
+//responsive
+@include mobile {
+
+}
+@media (max-width:1440px) {
+  .wrap{
+    .mainimg{
+      .inner{
+        height: 80vh;
+      }
+    }
+    #container{
+      .project{
+        .contbox{
+          padding:0 200px;
+          .txtbox{
+            padding-right: 10px;
+          }
+        }
       }
     }
   }
+}
+@include tablet {
+  .wrap{
+    .mainimg{
+      .inner{
+        height: 45vh;
+        p{
+          font-size: 3em;
+          right: 50%;
+          transform: translateX(50%);
+          line-height: 1.1em;
+        }
+      }
+    }
+    #container{
+      padding: 0 #{$pad-m};
+      #icon_scroll{
+        padding-top: 100px;
+      }
+      .project{
+        .contbox{
+          padding: 0 100px;
+          .year{
+            top: 3px;
+            left: inherit;
+            right: 100px;
+          }
+          .txtbox{
+            float: none;
+            width: 100%;
+            padding: 0 0 10px 0;
+          }
+          .block{
+            float: none;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include mobile {
+  .wrap{
+    .mainimg{
+      padding: 0;
+      .inner{
+        height: 30vh;
+        background-size: 167%;
+        background-position: -100px 3px;
+        p{
+          font-size: 1.8em;
+          font-weight: 200;
+          bottom: -1.2em;
+          text-shadow: -1px 2px 2px rgba(132, 26, 36, 0.9);
+        }
+      }
+    }
+    #container{
+      #icon_scroll{
+        padding-top: 30px;
+        display: none;
+      }
+      .project{
+        .contbox{
+          padding: 0;
+          margin-bottom: 50px;
+          .year{
+            position: initial;
+          }
+          .txtbox{
+            line-height: 36px;
+          }
+        }
+      }
+    }
+  }
+  
 }

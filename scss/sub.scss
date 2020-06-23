@@ -1,32 +1,44 @@
+@import 'respond';
 .wrap {
    #container {
       text-align: center;
       padding: 0 175px 150px 175px;
       //sub_profile
       .profile{
-         padding: 0 275px;
          h2{}
-         p{
-            line-height: 2em;
-            text-align: left;
-            padding-bottom: 2em;
+         .inner{
+            display: inline-block;
+            margin:auto;
+            h3{
+               text-align: left;
+            }
+            p{
+               line-height: 2em;
+               text-align: left;
+               padding-bottom: 2em;
+            }
          }
       }
       .skill{
          width: 100%;
-         .inner{
-            display: inline-block;
-            width: 10%;
-            .k_icon {
-               box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-               // border-radius: 60px;
-               height: 60px;
-               line-height: 60px;
-               width: 60px;
-               margin-bottom: 20px;
-            }
-            h4{
-               font-weight: 200;
+         .box{
+            margin: auto;
+            .inner{
+               display: inline-block;
+               width: 150px;
+               padding:0 1% 30px 1%;
+               .k_icon {
+                  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+                  // border-radius: 60px;
+                  height: 60px;
+                  line-height: 60px;
+                  width: 60px;
+                  margin-bottom: 20px;
+               }
+               h4{
+                  font-weight: 200;
+                  padding: 0 1%;
+               }
             }
          }
       }
@@ -244,6 +256,52 @@
                   }
                 }
             }
+         }
+      }
+   }
+}
+
+//responsive
+@media (max-width:1440px) {
+   .wrap{
+      #container{
+         padding: 0 100px 150px 100px;
+         //sub_visual
+         .tab{
+            padding: 0 50px;
+         }
+      }
+   }
+}
+
+@include tablet {
+   .wrap{
+      #container{
+         padding: 0 0 100px 0;
+         //sub_visual
+         .tab{
+            padding: 0 75px;
+            ul{
+               li{
+                  width: 50%;
+                  height: 60px;
+                  a{
+                     line-height: 60px;
+                  }
+
+               }
+            }
+      }
+      }
+
+   }
+}
+
+@include mobile {
+   .wrap{
+      #container{
+         .tab{
+            padding: 0 #{$pad-m};
          }
       }
    }

@@ -1,25 +1,32 @@
 .wrap #container {
   text-align: center;
   padding: 0 175px 150px 175px; }
-  .wrap #container .profile {
-    padding: 0 275px; }
-    .wrap #container .profile p {
+  .wrap #container .profile .inner {
+    display: inline-block;
+    margin: auto; }
+    .wrap #container .profile .inner h3 {
+      text-align: left; }
+    .wrap #container .profile .inner p {
       line-height: 2em;
       text-align: left;
       padding-bottom: 2em; }
   .wrap #container .skill {
     width: 100%; }
-    .wrap #container .skill .inner {
-      display: inline-block;
-      width: 10%; }
-      .wrap #container .skill .inner .k_icon {
-        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
-        height: 60px;
-        line-height: 60px;
-        width: 60px;
-        margin-bottom: 20px; }
-      .wrap #container .skill .inner h4 {
-        font-weight: 200; }
+    .wrap #container .skill .box {
+      margin: auto; }
+      .wrap #container .skill .box .inner {
+        display: inline-block;
+        width: 150px;
+        padding: 0 1% 30px 1%; }
+        .wrap #container .skill .box .inner .k_icon {
+          box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+          height: 60px;
+          line-height: 60px;
+          width: 60px;
+          margin-bottom: 20px; }
+        .wrap #container .skill .box .inner h4 {
+          font-weight: 200;
+          padding: 0 1%; }
   .wrap #container .tab ul li {
     width: 20%;
     height: 100px;
@@ -162,5 +169,24 @@
           left: 50px; }
         .wrap #container .contents .kiosk .directional_nav .next_btn {
           right: 50px; } }
+
+@media (max-width: 1440px) {
+  .wrap #container {
+    padding: 0 100px 150px 100px; }
+    .wrap #container .tab {
+      padding: 0 50px; } }
+@media (max-width: 1023px) {
+  .wrap #container {
+    padding: 0 0 100px 0; }
+    .wrap #container .tab {
+      padding: 0 75px; }
+      .wrap #container .tab ul li {
+        width: 50%;
+        height: 60px; }
+        .wrap #container .tab ul li a {
+          line-height: 60px; } }
+@media (max-width: 779px) {
+  .wrap #container .tab {
+    padding: 0 30px; } }
 
 /*# sourceMappingURL=sub.css.map */
