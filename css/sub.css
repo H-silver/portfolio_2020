@@ -81,16 +81,17 @@
     .wrap #container .contents .ui img {
       width: 100%; }
   .wrap #container .contents .kiosk {
-    height: 100%;
+    position: relative;
     margin: 0;
     padding: 0;
-    width: 100%; }
+    max-height: 800px; }
     .wrap #container .contents .kiosk .slider {
       margin: 0 auto;
-      max-width: 450px;
-      width: 40%; }
+      max-width: 540px;
+      width: 360px;
+      height: 640px; }
       .wrap #container .contents .kiosk .slider .slide_viewer {
-        height: 800px;
+        height: 100%;
         overflow: hidden;
         position: relative; }
         .wrap #container .contents .kiosk .slider .slide_viewer .slide_group {
@@ -113,12 +114,13 @@
             .wrap #container .contents .kiosk .slider .slide_viewer .slide_group .slide:nth-of-type(4) {
               background: #D1D1D4; }
             .wrap #container .contents .kiosk .slider .slide_viewer .slide_group .slide img {
-              width: 100%; }
+              height: 100%; }
     .wrap #container .contents .kiosk .slide_buttons {
       left: 0;
       position: absolute;
       right: 0;
-      text-align: center; }
+      text-align: center;
+      width: 100%; }
       .wrap #container .contents .kiosk .slide_buttons a.slide_btn {
         color: rgba(0, 0, 0, 0);
         margin: 0 0.175em;
@@ -216,9 +218,30 @@
     .wrap #container .contents .banner {
       padding: 0 30px; }
       .wrap #container .contents .banner .inner {
-        margin-bottom: 50px; } }
+        margin-bottom: 50px; }
+    .wrap #container .contents .kiosk {
+      padding: 0 100px; }
+      .wrap #container .contents .kiosk .slider {
+        background-color: blue; } }
 @media (max-width: 779px) {
   .wrap #container .tab {
-    padding: 0 30px; } }
+    padding: 0 30px; }
+  .wrap #container .contents
+  .kiosk {
+    padding: 0 50px; }
+    .wrap #container .contents
+    .kiosk .slider {
+      width: 202.5px;
+      height: 360px; }
+    .wrap #container .contents
+    .kiosk .slide_buttons a.slide_btn {
+      width: 15px;
+      margin: 20px 10px 0 10px; }
+      .wrap #container .contents
+      .kiosk .slide_buttons a.slide_btn:before {
+        width: 25px; }
+    .wrap #container .contents
+    .kiosk .directional_nav {
+      display: none; } }
 
 /*# sourceMappingURL=sub.css.map */
