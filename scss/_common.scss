@@ -39,10 +39,11 @@ h2 {
     padding-bottom: 100px;
 }
 
-h3 {
+
+h3{
     font-size: 24px;
-    font-weight: 500;
-    padding-bottom: 18px;
+    font-weight: 400;
+    padding: 100px 0 50px 0;
 }
 
 a{
@@ -51,6 +52,11 @@ a{
 
 ul{
     
+}
+.l-h{
+    font-size: 30px;
+    font-weight: 400;
+    display: inline-block;
 }
 
 $bg1:100px;
@@ -63,7 +69,7 @@ $bg3:40%;//788px;
         border-right: 1px solid #f4f4f4;
         position: fixed;
         top: 0;
-        z-index: -1;
+        z-index: -2;
     }
     .bg-line1{
         left: $bg1;
@@ -132,6 +138,7 @@ $bg3:40%;//788px;
         }
         h3{
             padding-bottom: 15px;
+            line-height: 39px;
         }
     }
     .bg-line{

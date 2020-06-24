@@ -520,15 +520,20 @@ h2 {
 
 h3 {
   font-size: 24px;
-  font-weight: 500;
-  padding-bottom: 18px; }
+  font-weight: 400;
+  padding: 100px 0 50px 0; }
+
+.l-h {
+  font-size: 30px;
+  font-weight: 400;
+  display: inline-block; }
 
 .bg-line div {
   height: 100vh;
   border-right: 1px solid #f4f4f4;
   position: fixed;
   top: 0;
-  z-index: -1; }
+  z-index: -2; }
 .bg-line .bg-line1 {
   left: 100px; }
 .bg-line .bg-line2 {
@@ -572,7 +577,8 @@ h3 {
       padding: 50px 0;
       font-size: 36px; }
     .wrap h3 {
-      padding-bottom: 15px; }
+      padding-bottom: 15px;
+      line-height: 39px; }
 
   .bg-line .bg-line1 {
     left: 50px; }

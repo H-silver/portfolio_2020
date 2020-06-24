@@ -3,19 +3,35 @@
    #container {
       text-align: center;
       padding: 0 175px 150px 175px;
+      
       //sub_profile
       .profile{
          h2{}
          .inner{
+            position: relative;
             display: inline-block;
             margin:auto;
             h3{
                text-align: left;
+               padding: 0 0 18px 0;
             }
             p{
-               line-height: 2em;
+               line-height: 38px;
                text-align: left;
                padding-bottom: 2em;
+               strong{
+                  color: #54c4cc;
+               }
+            }
+            .circle{
+               position: absolute;
+               top: 0;
+               left: -200px;
+               z-index: -1;
+               width: 300px;
+               height: 300px;
+               border-radius: 150px;
+               background-color: rgba($color: #e9e8ff, $alpha: 0.6);
             }
          }
       }
@@ -56,7 +72,6 @@
                   // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2),  -1px -1px rgba(0, 0, 0, 0.05);
                   background-color: rgba(0, 0, 0, 0);
                   a{
-                     // color: white;
                      // color: #e9e8ff;
                      color: #3b3b3b
                   }
@@ -67,6 +82,9 @@
                   height: 100%;
                   line-height: 100px;
                   color: #3b3b3b;
+                  padding: 0 10px;
+                  box-sizing: border-box;
+                  overflow: hidden;
                }
             }
             &::after{
@@ -81,18 +99,20 @@
 
          }
          .date{
-            padding-bottom: 100px;
+            padding-bottom: 50px;
          }
          //01 cardnew = slick folder
          //02 banner
-         .inner{
-            height: 200px;
-            margin-bottom: 100px;
-            img{
-               height: 100%;
-            }
-            &.vertical{
-               height: 600px;
+         .banner{
+            .inner{
+               height: 200px;
+               margin-bottom: 100px;
+               img{
+                  height: 100%;
+               }
+               &.vertical{
+                  height: 600px;
+               }
             }
          }
          //03 BI
@@ -270,6 +290,21 @@
          .tab{
             padding: 0 50px;
          }
+         .contents{
+            .banner{
+               .inner{
+                  width: 100%;
+                  height: auto;
+                  &.vertical{
+                     height: auto;
+                  }
+                  img{
+                     width: 100%;
+                     height: auto;
+                  }
+               }
+            }
+         }
       }
    }
 }
@@ -278,6 +313,13 @@
    .wrap{
       #container{
          padding: 0 0 100px 0;
+         //sub_profile
+         .profile{
+            padding: 0 #{$pad-m};
+         }
+         .skil{
+            padding: 0 #{$pad-m};
+         }
          //sub_visual
          .tab{
             padding: 0 75px;
@@ -291,7 +333,17 @@
 
                }
             }
-      }
+         }
+         //visual
+         .contents{
+            //02banner
+            .banner{
+               padding: 0 #{$pad-m};
+               .inner{
+                  margin-bottom: #{$pad-t};
+               }
+            }
+         }  
       }
 
    }

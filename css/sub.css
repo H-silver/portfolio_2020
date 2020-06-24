@@ -2,14 +2,27 @@
   text-align: center;
   padding: 0 175px 150px 175px; }
   .wrap #container .profile .inner {
+    position: relative;
     display: inline-block;
     margin: auto; }
     .wrap #container .profile .inner h3 {
-      text-align: left; }
+      text-align: left;
+      padding: 0 0 18px 0; }
     .wrap #container .profile .inner p {
-      line-height: 2em;
+      line-height: 38px;
       text-align: left;
       padding-bottom: 2em; }
+      .wrap #container .profile .inner p strong {
+        color: #54c4cc; }
+    .wrap #container .profile .inner .circle {
+      position: absolute;
+      top: 0;
+      left: -200px;
+      z-index: -1;
+      width: 300px;
+      height: 300px;
+      border-radius: 150px;
+      background-color: rgba(233, 232, 255, 0.6); }
   .wrap #container .skill {
     width: 100%; }
     .wrap #container .skill .box {
@@ -43,19 +56,22 @@
       width: 100%;
       height: 100%;
       line-height: 100px;
-      color: #3b3b3b; }
+      color: #3b3b3b;
+      padding: 0 10px;
+      box-sizing: border-box;
+      overflow: hidden; }
   .wrap #container .tab ul::after {
     content: "";
     display: table;
     clear: both; }
   .wrap #container .contents .date {
-    padding-bottom: 100px; }
-  .wrap #container .contents .inner {
+    padding-bottom: 50px; }
+  .wrap #container .contents .banner .inner {
     height: 200px;
     margin-bottom: 100px; }
-    .wrap #container .contents .inner img {
+    .wrap #container .contents .banner .inner img {
       height: 100%; }
-    .wrap #container .contents .inner.vertical {
+    .wrap #container .contents .banner .inner.vertical {
       height: 600px; }
   .wrap #container .contents .bi img {
     width: 100%; }
@@ -174,17 +190,33 @@
   .wrap #container {
     padding: 0 100px 150px 100px; }
     .wrap #container .tab {
-      padding: 0 50px; } }
+      padding: 0 50px; }
+    .wrap #container .contents .banner .inner {
+      width: 100%;
+      height: auto; }
+      .wrap #container .contents .banner .inner.vertical {
+        height: auto; }
+      .wrap #container .contents .banner .inner img {
+        width: 100%;
+        height: auto; } }
 @media (max-width: 1023px) {
   .wrap #container {
     padding: 0 0 100px 0; }
+    .wrap #container .profile {
+      padding: 0 30px; }
+    .wrap #container .skil {
+      padding: 0 30px; }
     .wrap #container .tab {
       padding: 0 75px; }
       .wrap #container .tab ul li {
         width: 50%;
         height: 60px; }
         .wrap #container .tab ul li a {
-          line-height: 60px; } }
+          line-height: 60px; }
+    .wrap #container .contents .banner {
+      padding: 0 30px; }
+      .wrap #container .contents .banner .inner {
+        margin-bottom: 50px; } }
 @media (max-width: 779px) {
   .wrap #container .tab {
     padding: 0 30px; } }

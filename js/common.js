@@ -1,7 +1,7 @@
     
 // nav
 function openNav() {
-  var mql = window.matchMedia("screen and (max-width: 768px)");
+  var mql = window.matchMedia("screen and (max-width: 780px)");
 
   if (mql.matches) {
       document.getElementById("menu").style.width = "80%";
