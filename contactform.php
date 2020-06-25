@@ -3,7 +3,7 @@
 if (isset($_POST['submit'])) {
    $name = $_POST['name'];
    $subject = $_POST['subject'];
-   $mailForm = $_POST['mail'];
+   $mailFrom = $_POST['mail'];
    $message = $_POST['message'];
 
    $mailTo = "haeunkang91@naver.com";
