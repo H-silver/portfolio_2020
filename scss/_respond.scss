@@ -7,6 +7,8 @@ $pad-t:50px;
 $pad-d:100px;
 $bt-m:15px;
 $bt-t:60px;
+$color1:#3b3b3b;
+$color2:#888;
 
 @mixin mobile {
    @media (max-width: #{$breakpoint-tablet - 1px}) {

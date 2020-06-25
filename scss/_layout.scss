@@ -29,6 +29,12 @@
                     img{
                         height: 100%;
                     }
+                    .invisible{
+                        color: rgba($color: #000000, $alpha: 0.0);
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        }
                 }
             }
             #btn-open{
@@ -41,8 +47,17 @@
                     display: inline-block;
                     width: 100%;
                     height: 100%;
+                    &:hover{
+                        background-color: rgba($color: #fff, $alpha: 0.8);
+                        border-radius: 0 0 0 25px;
+                        img{
+                            box-shadow: none;
+                        }
+                    }
                     img{
                         width: 100%;
+                        border-radius: 0 0 0 25px;
+                        box-shadow: 0 0 10px rgba($color: #fff, $alpha: 0.8);
                     }
                 }
             }
@@ -54,7 +69,7 @@
                         width: 0;
                         height: 100vh;
                         //padding: 5% 0 0 5%;
-                        background: #3b3b3b;
+                        background: #{$color1};
                         transition: width 1s;
                         #btn-close{
                             width: 0;
@@ -122,18 +137,32 @@
 
 
 #footer {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #efefef;
+    // background: #f1f3f6;
     background: #fff;
     padding: 90px 100px;
     font-size: 24px;
     font-family: 'Montserrat', sans-serif, 'Noto Sans KR';
     font-weight: 200;
-    color: #3b3b3b;
-    line-height: 42px;
+    // color: #{$color1};
+    // color: #{$color2};
+    color: rgba($color: #3b3b3b, $alpha: 00.5);
+    line-height: 36px;
     .copyright{
         li:first-child {
             font-size: 36px;
             font-weight: 900;
+            color: #f9f9f9;
+            text-shadow: 
+            // 2px 1px 2px rgba($color: #3b3b3b, $alpha: 0.2),
+            1px 2px 2px rgba($color: #3b3b3b, $alpha: 0.1),
+            3px 3px 10px rgba($color: #3b3b3b, $alpha: 0.15),
+            7px 7px 15px rgba($color: #3b3b3b, $alpha: 0.05),
+            -3px -3px 5px rgba($color: #3b3b3b, $alpha: 0.05),
+            -3px -3px 10px rgba($color: #3b3b3b, $alpha: 0.02),
+            -3px -3px 10px rgba($color: #3b3b3b, $alpha: 0.05),
+            -15px -15px 30px rgba($color: #3b3b3b, $alpha: 0.15);
+            line-height: 50px;
         }
     }
     .sns{
@@ -141,8 +170,11 @@
             li{
                 display: inline-block;
                 a{
+                    margin-right: 5px;
                     i:before{
-                        color: #3b3b3b;
+                        // color: #{$color1};
+                        // color: #{$color2};
+                        color: rgba($color: #3b3b3b, $alpha: 00.35);
                     }
                 }
                 .invisible{
@@ -181,20 +213,29 @@
                 h1{
                     top: 0;
                     left: -10px;
-                    height: 64px;
+                    height: 50px;
                     width: 80px;
                     a{
                         img{
+                        }
+                        .invisible{
+                            // color: #fff;
+                            // left: 10px;
+                            // font-size: 20px;
                         }
                     }
                 }
                 #btn-open{
                     top: 0;
                     right: 0;
-                    width: 64px;
-                    height: 64px;
+                    width: 50px;
+                    height: 50px;
                     a{
-
+                        background-color: rgba($color: #fff, $alpha: 1);
+                        border-radius: 0 0 0 24px;
+                        img{
+                            box-shadow: none;
+                        }
                     }
                 }
                 nav{
