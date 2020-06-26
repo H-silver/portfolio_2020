@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="wrap">
+      <?php include_once('./header.php'); ?>
         <div id="container">
             <div class="profile">
                 <h2>PROFILE</h2>
@@ -28,11 +29,6 @@
                     <p>
                         서브페이지. 모바일 반응형 작업. 디자인 작업.<br>
                     </p>
-                    <!-- <p>
-                        what how  for wg
-                    </p> -->
-                    <!-- <div class="circle"></div> -->
-
                 </div>
             </div>
             <div class="skill">

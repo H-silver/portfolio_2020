@@ -28,8 +28,8 @@
           .wrap #header .inner h1 a .invisible {
             color: rgba(0, 0, 0, 0);
             position: absolute;
-            top: 0;
-            left: -100%; }
+            top: -100px;
+            left: -100px; }
       .wrap #header .inner #btn-open {
         position: fixed;
         top: 100px;

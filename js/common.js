@@ -1,24 +1,38 @@
     
 // nav
-function openNav() {
-  var mql = window.matchMedia("screen and (max-width: 780px)");
 
+function openNav() {
+  var menu = document.getElementById("menu");
+  var mql = window.matchMedia("screen and (max-width: 780px)");
   if (mql.matches) {
-      document.getElementById("menu").style.width = "80%";
-      document.getElementById("menu").style.paddingTop = "10%";
+      menu.style.width = "80%";
+      menu.style.paddingTop = "10%";
       document.getElementById("btn-close").style.width = "64px";
   } else {
-      document.getElementById("menu").style.width = "50%";
-      document.getElementById("menu").style.paddingTop = "5%";
+      menu.style.width = "50%";
+      menu.style.paddingTop = "5%";
       document.getElementById("btn-close").style.width = "100px";
+    }
   }
-    
+  function closeNav() {
+    var menu = document.getElementById("menu");
+    var mql = window.matchMedia("screen and (max-width: 780px)");
+    if (mql.matches) {
+      menu.style.width = "0";
+      menu.style.paddingTop = "10%";
+      document.getElementById("btn-close").style.width = "0";
+    } else {
+      menu.style.width = "0";
+      menu.style.paddingTop = "5%";
+      document.getElementById("btn-close").style.width = "0";
+    }
   }
-function closeNav() {
-document.getElementById("menu").style.width = "0";
-document.getElementById("menu").style.paddingTop = "5%";
-document.getElementById("btn-close").style.width = "0";
-}
+    window.onclick = function(e){
+      var menu = document.getElementById("menu");
+      if(e.target == menu) {
+        menu.closeNav()
+      }
+    }
 
 // scroll reveal
 var rafId = null;
