@@ -6,7 +6,6 @@
       
       //sub_profile
       .profile{
-         h2{}
          .inner{
             position: relative;
             display: inline-block;
@@ -96,8 +95,6 @@
          }
       }
       .contents{
-         .title{
-         }
          .date{
             padding-bottom: 50px;
          }
@@ -287,9 +284,10 @@
          #mail_wrap{
             width: 100%;
             padding: 50px 100px;
-            background-color: #fff;
             box-sizing: border-box;
+            background-color: #fff;
             box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
+            
             ul{
                width: 100%;
                // border-top: 1px solid #3b3b3b;
@@ -300,6 +298,8 @@
                   border-bottom: 1px solid #ddd;
                   padding: 20px 0;
                   box-sizing: border-box;
+                  // background-color: #fff;
+                  // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
                   &:last-of-type{
                      border: none;
                   }
@@ -326,6 +326,7 @@
                         font-size: 20px;
                         color: #757575;
                         border: 1px solid #cfcfcf;
+                        box-sizing: border-box;
                         &:focus{
                            outline: none !important;
                         }
@@ -359,7 +360,7 @@
                   background-color: #b3b3b3;
                   border: 0;
                   cursor: pointer;
-                  font-size: 16px;
+                  // font-size: 16px;
                   letter-spacing: 2px;
                   height: auto;
                   line-height: normal;

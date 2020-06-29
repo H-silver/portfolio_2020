@@ -3,6 +3,13 @@
 function openNav() {
   var menu = document.getElementById("menu");
   var mql = window.matchMedia("screen and (max-width: 780px)");
+  
+  $('.wrap').on('scroll touchmove mousewheel', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    return false;
+  });
+  
   if (mql.matches) {
     menu.style.width = "80%";
     menu.style.paddingTop = "10%";
@@ -12,10 +19,17 @@ function openNav() {
     menu.style.paddingTop = "5%";
     document.getElementById("btn-close").style.width = "100px";
   }
+  $('html').click(function(e) { 
+    if(!$(e.target).hasClass("k")) { 
+      // alert('askjdflkjaskdf');
+      closeNav();
+    } 
+  });
 }
 function closeNav() {
   var menu = document.getElementById("menu");
   var mql = window.matchMedia("screen and (max-width: 780px)");
+  $('.wrap').off('scroll touchmove mousewheel');
   if (mql.matches) {
     menu.style.width = "0";
     menu.style.paddingTop = "10%";
@@ -26,12 +40,15 @@ function closeNav() {
     document.getElementById("btn-close").style.width = "0";
   }
 }
-// window.onclick = function (e) {
+
+// function closeElse() {
 //   var menu = document.getElementById("menu");
+  
 //   if (e.target != menu) {
-//     menu.closeNav();
+//     closeNav();
 //   }
-// };
+// }
+
 
 // scroll reveal
 var rafId = null;

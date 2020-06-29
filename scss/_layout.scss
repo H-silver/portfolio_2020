@@ -2,7 +2,7 @@
 
 .wrap{
     position: relative;
-    min-width: 320px;
+    // min-width: 320px;
     #header {
         position: absolute;
         top: 0;
@@ -194,6 +194,7 @@
             .inner{
                 nav{
                     #menu{
+                        transition: width 0.5s;
                         #btn-close{
                             top: 0;
                             right: 0;

@@ -96,7 +96,7 @@
             </div>
             <div class="block reveal">
               <div class="bg4"></div>
-              <a href="../site_mandoo" target="_blank">
+              <a href="../2019/site_mandoo" target="_blank">
                 <img src="./img/project2.png" alt="프로젝트2" />
               </a>
             </div>
@@ -114,7 +114,7 @@
             </div>
             <div class="block reveal">
               <div class="bg5"></div>
-              <a href="../site_milk" target="_blank">
+              <a href="../2019/site_milk" target="_blank">
                 <img src="./img/project1.png" alt="프로젝트1" />
               </a>
             </div>

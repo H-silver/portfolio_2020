@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap");
 .wrap {
-  position: relative;
-  min-width: 320px; }
+  position: relative; }
   .wrap #header {
     position: absolute;
     top: 0;
@@ -130,9 +129,11 @@
       left: -100%; }
 
 @media (max-width: 1440px) {
-  .wrap #header .inner nav #menu #btn-close {
-    top: 0;
-    right: 0; } }
+  .wrap #header .inner nav #menu {
+    transition: width 0.5s; }
+    .wrap #header .inner nav #menu #btn-close {
+      top: 0;
+      right: 0; } }
 @media (max-width: 779px) {
   .wrap #header .inner {
     padding: 0; }
