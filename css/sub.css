@@ -188,6 +188,74 @@
           left: 50px; }
         .wrap #container .contents .kiosk .directional_nav .next_btn {
           right: 50px; } }
+  .wrap #container .contact {
+    padding: 0 125px; }
+    .wrap #container .contact #mail_wrap {
+      width: 100%;
+      padding: 50px 100px;
+      background-color: #fff;
+      box-sizing: border-box;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05); }
+      .wrap #container .contact #mail_wrap ul {
+        width: 100%;
+        text-align: left; }
+        .wrap #container .contact #mail_wrap ul li {
+          width: 100%;
+          border-bottom: 1px solid #ddd;
+          padding: 20px 0;
+          box-sizing: border-box; }
+          .wrap #container .contact #mail_wrap ul li:last-of-type {
+            border: none; }
+          .wrap #container .contact #mail_wrap ul li::after {
+            content: "";
+            clear: both;
+            display: block; }
+          .wrap #container .contact #mail_wrap ul li div {
+            float: left;
+            width: 85%;
+            color: #535353; }
+            .wrap #container .contact #mail_wrap ul li div.left {
+              width: 15%;
+              color: #000;
+              padding: 10px 0 0 0;
+              color: #3b3b3b; }
+            .wrap #container .contact #mail_wrap ul li div input {
+              width: 100%;
+              padding: 10px;
+              font-size: 20px;
+              color: #757575;
+              border: 1px solid #cfcfcf; }
+              .wrap #container .contact #mail_wrap ul li div input:focus {
+                outline: none !important; }
+            .wrap #container .contact #mail_wrap ul li div textarea {
+              width: 100%;
+              padding: 10px;
+              color: #757575;
+              border: 1px solid #cfcfcf;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 20px;
+              height: 220px;
+              resize: none;
+              box-sizing: border-box; }
+              .wrap #container .contact #mail_wrap ul li div textarea:focus {
+                outline: none !important; }
+      .wrap #container .contact #mail_wrap .last_btn {
+        text-align: center;
+        margin-top: 50px; }
+        .wrap #container .contact #mail_wrap .last_btn .btn {
+          display: inline-block;
+          width: 250px;
+          padding: 15px 0;
+          color: #fff;
+          background-color: #b3b3b3;
+          border: 0;
+          cursor: pointer;
+          font-size: 16px;
+          letter-spacing: 2px;
+          height: auto;
+          line-height: normal;
+          font-weight: normal; }
 
 @media (max-width: 1440px) {
   .wrap #container {

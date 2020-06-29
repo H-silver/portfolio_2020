@@ -21,19 +21,19 @@
         </div>
         <ul>
           <li>
-            <a href="./index.html"><div>HOME</div></a>
+            <a href="./index.php"><div>HOME</div></a>
           </li>
           <li>
-            <a href="./index.html#project"><div>PROJECT</div></a>
+            <a href="./index.php#project"><div>PROJECT</div></a>
           </li>
           <li>
-            <a href="./sub_profile.html"><div>PROFILE</div></a>
+            <a href="./sub_profile.php"><div>PROFILE</div></a>
           </li>
           <li>
             <a href="./sub_visual01.php"><div>VISUAL</div></a>
           </li>
           <li>
-            <a href="./sub_contact.html"><div>CONTACT</div></a>
+            <a href="./sub_contact.php"><div>CONTACT</div></a>
           </li>
         </ul>
       </div>

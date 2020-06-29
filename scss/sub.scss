@@ -281,6 +281,93 @@
             }
          }
       }
+      //sub_contact
+      .contact{
+         padding: 0 125px;
+         #mail_wrap{
+            width: 100%;
+            padding: 50px 100px;
+            background-color: #fff;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
+            ul{
+               width: 100%;
+               // border-top: 1px solid #3b3b3b;
+               // font-size: 13px;
+               text-align: left;
+               li{
+                  width: 100%;
+                  border-bottom: 1px solid #ddd;
+                  padding: 20px 0;
+                  box-sizing: border-box;
+                  &:last-of-type{
+                     border: none;
+                  }
+                  &::after{
+                     content: "";
+                     clear: both;
+                     display: block;
+                  }
+                  div{
+                     float: left;
+                     width: 85%;
+                     color: #535353;
+                     // font-size: 13px;
+                     &.left{
+                        width: 15%;
+                        color: #000;
+                        padding: 10px 0 0 0;
+                        // font-size: 14px;
+                        color: #3b3b3b;
+                     }
+                     input{
+                        width: 100%;
+                        padding: 10px;
+                        font-size: 20px;
+                        color: #757575;
+                        border: 1px solid #cfcfcf;
+                        &:focus{
+                           outline: none !important;
+                        }
+                     }
+                     textarea{
+                        width: 100%;
+                        padding: 10px;
+                        color: #757575;
+                        border: 1px solid #cfcfcf;
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        height: 220px;
+                        resize: none;
+                        box-sizing: border-box;
+                        &:focus{
+                           outline: none !important;
+                        }
+                     }
+                  }
+               }
+            }
+            .last_btn{
+               text-align: center;
+               margin-top: 50px;
+               .btn{
+                  display: inline-block;
+                  width: 250px;
+                  padding: 15px 0;
+                  color: #fff;
+                  background-color: #b3b3b3;
+                  border: 0;
+                  cursor: pointer;
+                  font-size: 16px;
+                  letter-spacing: 2px;
+                  height: auto;
+                  line-height: normal;
+                  font-weight: normal;
+               }
+            }
+         }
+      }
    }
 }
 
