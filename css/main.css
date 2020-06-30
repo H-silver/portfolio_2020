@@ -138,6 +138,7 @@
       background-size: 167%;
       background-position: -100px 3px; }
       .wrap .mainimg .inner p {
+        display: none;
         font-size: 1.8em;
         font-weight: 200;
         bottom: -1.2em;

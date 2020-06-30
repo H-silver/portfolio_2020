@@ -21,9 +21,10 @@
                     <h3>웹에이전시 5개월 <span class="l-h">:</span> 디자인 위주.</h3>
                     <p>
                         <strong>경동나비엔 나비엔하우스 
-                        <span class="l-h">:</span></strong> 서브페이지, 모바일페이지 일부.<br>
-                        <strong>몽블랑 <span class="l-h">:</span></strong> 팝업스토어 내 키오스크 작업 참여.<br>
-                        <strong>녹수 <span class="l-h">:</span></strong> 사이트 유지 보수.<br>
+                        <span class="l-h">:</span></strong> 서브페이지, 모바일페이지 일부 디자인.<br>
+                        <strong>몽블랑 <span class="l-h">:</span></strong> 팝업스토어 내 키오스크 디자인 참여.<br>
+                        <strong>녹수 <span class="l-h">:</span></strong> 간단한 사이트 유지 보수.<br>
+                        <strong>모두가딜러 <span class="l-h">:</span></strong> 자사 앱의 배너 디자인. 웹/앱 수정 퍼블리싱<br>
                     </p>
                     <h3>프리랜서 2개월 <span class="l-h">:</span> 디자인 및 퍼블리싱. </h3>
                     <p>

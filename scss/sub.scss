@@ -283,23 +283,19 @@
          padding: 0 125px;
          #mail_wrap{
             width: 100%;
-            padding: 50px 100px;
+            padding: 0 20%;
             box-sizing: border-box;
-            background-color: #fff;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
-            
+            font-size: 20px;
             ul{
                width: 100%;
-               // border-top: 1px solid #3b3b3b;
-               // font-size: 13px;
                text-align: left;
                li{
                   width: 100%;
-                  border-bottom: 1px solid #ddd;
                   padding: 20px 0;
                   box-sizing: border-box;
-                  // background-color: #fff;
-                  // box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
+                  background-color: #fff;
+                  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.09), -1px -1px rgba(0, 0, 0, 0.05);
+                  margin-bottom: 30px;
                   &:last-of-type{
                      border: none;
                   }
@@ -310,32 +306,39 @@
                   }
                   div{
                      float: left;
-                     width: 85%;
+                     width: 65%;
                      color: #535353;
-                     // font-size: 13px;
+                     font-weight: 400;
+                     margin-right: 5%;
                      &.left{
-                        width: 15%;
+                        width: 25%;
                         color: #000;
-                        padding: 10px 0 0 0;
-                        // font-size: 14px;
+                        padding: 10px 10px 10px 20px;
                         color: #3b3b3b;
+                        background-color: #fff;
+                        box-sizing: border-box;
+                        // border-left: 10px solid #e9e8ff;
                      }
                      input{
                         width: 100%;
                         padding: 10px;
                         font-size: 20px;
                         color: #757575;
-                        border: 1px solid #cfcfcf;
+                        border: none;
+                        border-bottom: 1px solid #cfcfcf;
+                        border-left: 1px solid #cfcfcf;
                         box-sizing: border-box;
                         &:focus{
-                           outline: none !important;
+                           outline: #e9e8ff solid !important;
                         }
                      }
                      textarea{
                         width: 100%;
                         padding: 10px;
                         color: #757575;
-                        border: 1px solid #cfcfcf;
+                        border: none;
+                        border-left: 1px solid #cfcfcf;
+                        border-bottom: 1px solid #cfcfcf;
                         font-size: 20px;
                         font-weight: 400;
                         line-height: 20px;
@@ -343,7 +346,7 @@
                         resize: none;
                         box-sizing: border-box;
                         &:focus{
-                           outline: none !important;
+                           outline: #e9e8ff solid !important;
                         }
                      }
                   }
@@ -351,20 +354,27 @@
             }
             .last_btn{
                text-align: center;
-               margin-top: 50px;
+               width: 100%;
                .btn{
                   display: inline-block;
-                  width: 250px;
-                  padding: 15px 0;
+                  width: 100%;
+                  padding: 20px 0;
                   color: #fff;
-                  background-color: #b3b3b3;
-                  border: 0;
+                  background-color: #3b3b3b;
+                  border: 1px solid #e9e8ff;
                   cursor: pointer;
-                  // font-size: 16px;
                   letter-spacing: 2px;
                   height: auto;
                   line-height: normal;
-                  font-weight: normal;
+                  font-weight: 500;
+                  box-shadow: 5px 5px 5px rgba($color: #000, $alpha: 0.09), -1px -1px rgba($color: #000, $alpha: 0.05);
+                  &:hover{
+                     color: #fff;
+                     text-shadow: 0 0 20px #766cff, 0 0 3px #877fff;
+                     border: 1px solid #e5e3fd;
+                     background-color: #e9e8ff;
+                     
+                  }
                }
             }
          }
@@ -396,6 +406,12 @@
                }
             }
          }
+         //sub_contact
+         .contact{
+            #mail_wrap{
+               padding: 0;
+            }
+         }
       }
    }
 }
@@ -404,6 +420,14 @@
    .wrap{
       #container{
          padding: 0 0 100px 0;
+         //sub_profile
+         .profile{
+            .inner{
+               p{
+                  line-height: 34px;
+               }
+            }
+         }
          //sub_profile
          .profile{
             padding: 0 #{$pad-m};
@@ -425,7 +449,6 @@
                }
             }
          }
-         //visual
          .contents{
             //02banner
             .banner{
@@ -442,8 +465,11 @@
                }
             }
          }  
+         //sub_contact
+         .contact{
+            padding: 0 #{$pad-t};
+         }
       }
-
    }
 }
 
@@ -472,6 +498,24 @@
             }
             .directional_nav{
                display: none;
+            }
+         }
+         //sub_contact
+         .contact{
+            padding: 0 #{$pad-m};
+            #mail_wrap{
+               ul{
+                  li{
+                     padding: 30px;
+                     div{
+                        width: 100%;
+                        &.left{
+                           width: 100%;
+                           padding: 0 0 20px 0;
+                        }
+                     }
+                  }
+               }
             }
          }
       }
