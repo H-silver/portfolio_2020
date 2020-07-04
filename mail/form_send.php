@@ -38,7 +38,7 @@ if($mode == "send") {
 	if($file[2] != "") @unlink($target[2]);
 	if($file[3] != "") @unlink($target[3]);
 	echo "<meta http-equiv='content-type' content='text/html; charset=utf-8'>";
-	if($ret) echo "<script>alert('전송이 완료되었습니다.');location.href='../index.php';</script>";
+	if($ret) echo "<script>alert('전송이 완료되었습니다.');location.href='../index.html';</script>";
 	else echo "<script>alert('폼메일 발송 실패: 입력하신 내용을 확인해 주세요.');history.back();</script>";
 }
 

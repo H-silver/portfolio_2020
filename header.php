@@ -1,7 +1,7 @@
 <div id="header">
   <div class="inner">
     <h1>
-      <a href="./index.php">
+      <a href="./index.html">
         <img src="./img/logo.png" alt="로고" />
         <div class="invisible">KANG HA EUN</div>
       </a>
@@ -21,10 +21,10 @@
         </div>
         <ul>
           <li>
-            <a href="./index.php"><div class="k">HOME</div></a>
+            <a href="./index.html"><div class="k">HOME</div></a>
           </li>
           <li>
-            <a href="./index.php#project"><div class="k">PROJECT</div></a>
+            <a href="./index.html#project"><div class="k">PROJECT</div></a>
           </li>
           <li>
             <a href="./sub_profile.php"><div class="k">PROFILE</div></a>
