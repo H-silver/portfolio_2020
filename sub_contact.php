@@ -32,34 +32,7 @@
         </div>
       </div>
     </div>
-    <div id="footer">
-      <div class="copyright">
-        <ul>
-          <li>KANG HAEUN</li>
-          <li>© All Rights Reserved.</li>
-        </ul>
-      </div>
-      <div class="sns">
-        <ul>
-          <li>
-            <a href="https://github.com/H-silver" target="_blank">
-              <i class="fab fa-github"></i>
-            </a>
-            <div class="invisible">
-              git
-            </div>
-          </li>
-          <li>
-            <a href="">
-              <i class="fab fa-instagram"></i>
-            </a>
-            <div class="invisible">
-              instagram
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <?php include_once('./footer.php'); ?>
     <div class="bg-line">
       <div class="bg-line1"></div>
       <div class="bg-line2"></div>
